@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <div id="app">
+    <div class="header">
+      <h1>Project</h1>
+    </div>
+    <div class="topnav">
+    <a href="452week4.html">Home</a>
+    <a href="2.html">Project</a>
+    <a href="3.html">Travel</a>
+    <a href="#" style="float:right">Link</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>BBQ</h2>
+        <h5>Where I BBQ during college, March 23, 2024</h5>
+        <img src="BBQ.jpg" alt="My travel photo" style="width:50%; height:auto;"> 
+        <p>Have a barbecue with my friends on the weekend </p>
+      </div>
+      <div class="card">
+        <h2> The view from the barbecue</h2>
+        <h5>Where I BBQ during college, March 23, 2024</h5>
+        <img src="BBQ2.jpg" alt="Your Image Description" style="width: 100%; height: auto;">
+        <p> It's just sunset.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2> Food</h2> 
+        <img src="food2.jpg" alt="Your Image Description" style="width: 100%; height: auto; max-height: 180px;">
+      </div>
+      <div class="card">
+        <h3>Food</h3>
+        <img src="food3.jpg" alt="Your Image Description" style="width: 100%; height: auto; max-height: 180px;">
+        <p>This is my favorite food Drunken shrimp</p>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>2975298232@qq.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+</div>
+<script>
+  const header = document.querySelector('.header h1');
+  const topNav = document.querySelectorAll('.topnav a');
+
+  for (let i = 0; i < topNav.length; i++) {
+    topNav[i].addEventListener('click', function () {
+      header.innerHTML = topNav[i].innerText;
+    });
+  }
+
+</script>
+</body>
+
+</html>

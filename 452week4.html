@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <div id="app">
+    <div class="header">
+      <h1>Claire's Website</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="452week4.html">Home</a>
+      <a href="2.html">Project</a>
+      <a href="3.html">Travel</a>
+      <a href="#" style="float:right">Link</a>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>hometown</h2>
+          <h5> hometown</h5>
+          <img src="hz.jpg" alt="My travel photo" style="width:50%; height:auto;"> 
+          <p> This is my homtown-HangZhou</p>
+        </div>
+        <div class="card">
+          <h2>My pet</h2>
+          <h5>Stinky was born on January 7, 2023</h5>
+          <img src="pet.jpg" alt="Your Image Description" style="width: 100%; height: auto;">
+          <p>This is a hamster named Stinky, has a very docile personality, likes to play with people, and often sleeps on my hand</p>
+          <p>Stinky is very healthy and lively</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2> 
+          <img src="me.jpg" alt="Your Image Description" style="width: 100%; height: auto; max-height: 180px;">
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <img src="food.jpg" alt="Your Image Description" style="width: 100%; height: auto; max-height: 180px;">
+          <p>This is my favorite food Drunken shrimp</p>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>2975298232@qq.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+  </div>
+  <script>
+    const header = document.querySelector('.header h1');
+    const topNav = document.querySelectorAll('.topnav a');
+
+    for (let i = 0; i < topNav.length; i++) {
+      topNav[i].addEventListener('click', function () {
+        header.innerHTML = topNav[i].innerText;
+      });
+    }
+
+  </script>
+</body>
+
+</html>
